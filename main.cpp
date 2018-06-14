@@ -85,22 +85,6 @@ int main()
           		meas_package.raw_measurements_ << px, py;
           		iss >> timestamp;
           		meas_package.timestamp_ = timestamp;
-
-              // Package
-              //    px - py - time - x_gt - y_gt - vx_gt - vy_gt
-              // L 3.122427e-01  
-              //   5.803398e-01  
-                
-              //   1477010443000000  
-                
-              //   6.000000e-01  
-              //   6.000000e-01  
-                
-              //   5.199937e+00  
-              //   0 
-                
-              //   0 
-              //   6.911322e-03
           } 
 
     //--------------------------
@@ -152,7 +136,7 @@ int main()
     	       fusionEKF.ProcessMeasurement(meas_package);    	  
 
     	  //Push the current estimated x,y positon from the Kalman filter's state vector
-    	    VectorXd estimate(4);
+    	       VectorXd estimate(4);
 
         // Estimate
         	  double p_x = fusionEKF.ekf_.x_(0);
