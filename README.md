@@ -1,7 +1,7 @@
 # Extended Kalman Filter
 
 [![EKF](WriteUp/EKF.gif)](https://youtu.be/yG281qxlcGY "Extended Kalman Filter")
-
+>#### [Full Video](https://youtu.be/yG281qxlcGY) on YouTube
 # Objective
 > Utilize a kalman filter to estimate the state
 of a moving object of interest with noisy lidar and radar measurements.
